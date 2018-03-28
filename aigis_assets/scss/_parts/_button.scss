@@ -1,0 +1,62 @@
+$border-color: #e4e4e4;
+
+@mixin button-size($height: 48px, $padding: 16px 28px, $width: 180px) {
+  height: $height;
+  padding: $padding;
+  width: $width;
+}
+
+.button {
+  $_ancestor: &;
+  border-radius: 50px;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: center;
+  /* default */
+  &_nomal {
+    background-color: $COLOR_WHITE;
+    border: 1px solid $border-color;
+    color: $COLOR_NAVY;
+  }
+
+  &_student {
+    background-color: $COLOR_MAIN;
+    border: 1px solid $border-color;
+    color: $COLOR_WHITE;
+  }
+
+  &_firm {
+    background-color: $COLOR_FIRM;
+    border: 1px solid $border-color;
+    color: $COLOR_WHITE;
+  }
+
+  &_complate {
+    background: $COLOR_GRAIENT_BLUE;
+    border: 1px solid $border-color;
+    color: $COLOR_WHITE;
+  }
+
+  &_grayout {
+    background-color: $COLOR_GRAY;
+    border: 1px solid $border-color;
+    color: $COLOR_GREYOUT;
+  }
+  /* end */
+
+  /* size */
+  &_small {
+    @include button-size(42px, 12px 28px, 145px);
+    @include font-size(14);
+  }
+
+  &_medium {
+    @include button-size;
+    @include font-size(14);
+  }
+
+  &_large {
+    @include button-size(54px, 20px 28px, null);
+    @include font-size(20);
+  }
+}
