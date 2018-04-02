@@ -99,7 +99,7 @@ body {
   left: 25px;
   position: absolute;
   top: 50%;
-  background: url(../images/icon/icon_facebook.svg);
+  background-image: url(../images/icon/icon_facebook.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -115,7 +115,7 @@ body {
   left: 25px;
   position: absolute;
   top: 50%;
-  background: url(../images/icon/icon_twitter.svg);
+  background-image: url(../images/icon/icon_twitter.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -131,7 +131,7 @@ body {
   left: 25px;
   position: absolute;
   top: 50%;
-  background: url(../images/icon/icon_hatena.svg);
+  background-image: url(../images/icon/icon_hatena.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -147,7 +147,7 @@ body {
   left: 25px;
   position: absolute;
   top: 50%;
-  background: url(../images/icon/icon_line.svg);
+  background-image: url(../images/icon/icon_line.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -163,7 +163,7 @@ body {
   left: 25px;
   position: absolute;
   top: 50%;
-  background: url(../images/icon/icon_swesome.svg);
+  background-image: url(../images/icon/icon_swesome.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -179,7 +179,7 @@ body {
   left: 25px;
   position: absolute;
   top: 50%;
-  background: url(../images/icon/icon_favorite.svg);
+  background-image: url(../images/icon/icon_favorite.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -195,7 +195,7 @@ body {
   left: 25px;
   position: absolute;
   top: 50%;
-  background: url(../images/icon/icon_nice.svg);
+  background-image: url(../images/icon/icon_nice.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -231,37 +231,37 @@ body {
 }
 
 .button_nomal {
-  background: #fff;
+  background-color: #fff;
   border: 1px solid #e4e4e4;
   color: #09263d;
 }
 
 .button_student {
-  background: #149e7b;
+  background-color: #149e7b;
   border: 1px solid #e4e4e4;
   color: #fff;
 }
 
 .button_firm {
-  background: #0649ff;
+  background-color: #0649ff;
   border: 1px solid #e4e4e4;
   color: #fff;
 }
 
 .button_success {
-  background: linear-gradient(270deg, #0839e6 0%, #148d9e 100%);
+  background-color: linear-gradient(270deg, #0839e6 0%, #148d9e 100%);
   border: 1px solid #e4e4e4;
   color: #fff;
 }
 
 .button_grayout {
-  background: #f8f8f9;
+  background-color: #f8f8f9;
   border: 1px solid #e4e4e4;
   color: #bdbec8;
 }
 
 .button_grayout {
-  background: #f8f8f9;
+  background-color: #f8f8f9;
   border: 1px solid #e4e4e4;
   color: #bdbec8;
 }
@@ -306,7 +306,7 @@ body {
   position: absolute;
   right: 20px;
   top: 50%;
-  background: #09263d;
+  background-color: #09263d;
   height: 1px;
   transform: translateY(50%);
   width: 13px;
@@ -339,7 +339,7 @@ body {
   left: 20px;
   position: absolute;
   top: 23px;
-  background: #09263d;
+  background-color: #09263d;
   height: 1px;
   transform: translateY(50%);
   width: 13px;
@@ -486,43 +486,43 @@ body {
 /* end */
 /* iconの画像 */
 .circle-button_facebook {
-  background: url("../images/icon/icon_facebook.svg");
+  background-image: url(../images/icon/icon_facebook.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
 .circle-button_twitter {
-  background: url("../images/icon/icon_twitter.svg");
+  background-image: url(../images/icon/icon_twitter.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
 .circle-button_hatena {
-  background: url("../images/icon/icon_hatena.svg");
+  background-image: url(../images/icon/icon_hatena.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
 .circle-button_line {
-  background: url("../images/icon/icon_line.svg");
+  background-image: url(../images/icon/icon_line.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
 .circle-button_swesome {
-  background: url("../images/icon/icon_swesome.svg");
+  background-image: url(../images/icon/icon_swesome.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
 .circle-button_favorite {
-  background: url("../images/icon/icon_favorite.svg");
+  background-image: url(../images/icon/icon_favorite.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
 .circle-button_nice {
-  background: url("../images/icon/icon_nice.svg");
+  background-image: url(../images/icon/icon_nice.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -536,7 +536,7 @@ body {
 }
 
 .circle-button_nomal {
-  background: #fff;
+  background-color: #fff;
 }
 
 .circle-button_arrow-plus {
@@ -598,7 +598,7 @@ body {
 }
 
 .notice-bar_success::before {
-  background: url(../images/icon/icon_success.svg);
+  background-image: url(../images/icon/icon_success.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -615,7 +615,7 @@ body {
 }
 
 .notice-bar_exclamation::before {
-  background: url(../images/icon/icon_exclamation.svg);
+  background-image: url(../images/icon/icon_exclamation.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -632,7 +632,7 @@ body {
 }
 
 .notice-bar_errow::before {
-  background: url(../images/icon/icon_errow.svg);
+  background-image: url(../images/icon/icon_errow.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100%;

@@ -18,13 +18,13 @@ $border-color: #e4e4e4;
 }
 /* end */
 /* iconの画像 */
-$icon-items: facebook, twitter, hatena, line, swesome, favorite, nice;
-@each $icon in $icon-items {
+$icon-button-items: facebook, twitter, hatena, line, swesome, favorite, nice;
+@each $icon in $icon-button-items {
   .button_#{$icon} {
     position: relative;
     &::before {
       @include before-after-position(50%, null, null, 25px);
-      background: url(../images/icon/icon_#{$icon}.svg);
+      background-image: url(../images/icon/icon_#{$icon}.svg);
       background-position: 0 0;
       background-repeat: no-repeat;
       background-size: 100%;
@@ -43,32 +43,32 @@ $icon-items: facebook, twitter, hatena, line, swesome, favorite, nice;
   text-align: center;
   /* default */
   &_nomal {
-    background: $COLOR_WHITE;
+    background-color: $COLOR_WHITE;
     border: 1px solid $border-color;
     color: $COLOR_NAVY;
   }
   &_student {
-    background: $COLOR_MAIN;
+    background-color: $COLOR_MAIN;
     border: 1px solid $border-color;
     color: $COLOR_WHITE;
   }
   &_firm {
-    background: $COLOR_FIRM;
+    background-color: $COLOR_FIRM;
     border: 1px solid $border-color;
     color: $COLOR_WHITE;
   }
   &_success {
-    background: $COLOR_GRAIENT_BLUE;
+    background-color: $COLOR_GRAIENT_BLUE;
     border: 1px solid $border-color;
     color: $COLOR_WHITE;
   }
   &_grayout {
-    background: $COLOR_GRAY;
+    background-color: $COLOR_GRAY;
     border: 1px solid $border-color;
     color: $COLOR_GREYOUT;
   }
   &_grayout {
-    background: $COLOR_GRAY;
+    background-color: $COLOR_GRAY;
     border: 1px solid $border-color;
     color: $COLOR_GREYOUT;
   }
@@ -99,7 +99,7 @@ $icon-items: facebook, twitter, hatena, line, swesome, favorite, nice;
     }
     &::before {
       @include before-after-position(50%, 20px, null, null);
-      background: $COLOR_NAVY;
+      background-color: $COLOR_NAVY;
       height: 1px;
       transform: translateY(50%);
       width: 13px;
@@ -126,7 +126,7 @@ $icon-items: facebook, twitter, hatena, line, swesome, favorite, nice;
 
     &::before {
       @include before-after-position(23px, null, null, 20px);
-      background: $COLOR_NAVY;
+      background-color: $COLOR_NAVY;
       height: 1px;
       transform: translateY(50%);
       width: 13px;
