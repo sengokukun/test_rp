@@ -12,12 +12,12 @@
   <body>
     <div class="aigis-container">
       <div class="aigis-sidemenu">
-        <header class="aigis-header"><a href="../../index.html">Styleguide</a></header>
+        <header class="aigis-header"><a href="../../index.html">TRUNK STYLEGUIDE</a></header>
         <h2 class="aigis-sidemenu__heading">settings</h2>
         <nav class="aigis-categoryList"><ul data-path-depth="0"></ul>
         </nav>
         <h2 class="aigis-sidemenu__heading">parts</h2>
-        <nav class="aigis-categoryList"><ul data-path-depth="0"><li data-path-depth="0"><a href="../../parts/button/index.html" data-tree-current>button</a></li></ul>
+        <nav class="aigis-categoryList"><ul data-path-depth="0"><li data-path-depth="0"><a href="../../parts/button/index.html" data-tree-current>button</a></li><li data-path-depth="0"><a href="../../parts/circle_button/index.html">circle_button</a></li><li data-path-depth="0"><a href="../../parts/notice_bar/index.html">notice_bar</a></li></ul>
         </nav>
         <h2 class="aigis-sidemenu__heading">modules</h2>
         <nav class="aigis-categoryList"><ul data-path-depth="0"></ul>
@@ -35,7 +35,10 @@
             <h2 id="button" class="aigis-module__heading">button</h2>
             <div class="aigis-module__filepath">/src/views/parts/_button.scss</div>
             <ul class="aigis-tags">
-            </ul><div class="aigis-preview">
+            </ul><h2 id="-">クラスの指定順番</h2>
+<p>[.button]-[カラー]-[装飾/icon]-[サイズ]</p>
+<p>例) <code>.button.button.buttom_nomal.button_arrow-right.button_medium</code></p>
+<div class="aigis-preview">
 
 <div class="button button_nomal button_medium">通常のボタン</div></div>
 
@@ -58,14 +61,133 @@
 </code></pre>
 <div class="aigis-preview">
 
-<div class="button button_complate button_medium">完了</div></div>
+<div class="button button_success button_medium">完了</div></div>
 
-<pre><code class="language-jade"><span class="token tag" >.button.button_complate.button_medium</span>
+<pre><code class="language-jade"><span class="token tag" >.button.button_success.button_medium</span>
   <span class="token punctuation" >|</span> 完了
+</code></pre>
+<div class="aigis-preview">
+
+<div class="button button_grayout button_medium">グレーアウト</div></div>
+
+<pre><code class="language-jade"><span class="token tag" >.button.button_grayout.button_medium</span>
+  <span class="token punctuation" >|</span> グレーアウト
+</code></pre>
+<div class="aigis-preview">
+
+<div class="button button_nomal button_small">small</div></div>
+
+<pre><code class="language-jade"><span class="token tag" >.button.button_nomal.button_small</span>
+  <span class="token punctuation" >|</span> small
+</code></pre>
+<div class="aigis-preview">
+
+<div class="button button_nomal button_medium">medium</div></div>
+
+<pre><code class="language-jade"><span class="token tag" >.button.button_nomal.button_medium</span>
+  <span class="token punctuation" >|</span> medium
+</code></pre>
+<div class="aigis-preview">
+
+<div class="button button_nomal button_large">large</div></div>
+
+<pre><code class="language-jade"><span class="token tag" >.button.button_nomal.button_large</span>
+  <span class="token punctuation" >|</span> large
+</code></pre>
+<div class="aigis-preview">
+
+<div class="button button_nomal button_arrow-right button_medium">arrow-right</div></div>
+
+<pre><code class="language-jade"><span class="token tag" >.button.button_nomal.button_arrow-right.button_medium</span>
+  <span class="token punctuation" >|</span> arrow<span class="token punctuation" >-</span>right
+</code></pre>
+<div class="aigis-preview">
+
+<div class="button button_nomal button_arrow-left button_medium">arrow-left</div></div>
+
+<pre><code class="language-jade"><span class="token tag" >.button.button_nomal.button_arrow-left.button_medium</span>
+  <span class="token punctuation" >|</span> arrow<span class="token punctuation" >-</span>left
+</code></pre>
+<div class="aigis-preview">
+
+<div class="button button_nomal button_arrow-bottom button_medium">arrow-bottom</div></div>
+
+<pre><code class="language-jade"><span class="token tag" >.button.button_nomal.button_arrow-bottom.button_medium</span>
+  <span class="token punctuation" >|</span> arrow<span class="token punctuation" >-</span>bottom
+</code></pre>
+<div class="aigis-preview">
+
+<div class="button button_nomal button_arrow-top button_medium">arrow-bottom</div></div>
+
+<pre><code class="language-jade"><span class="token tag" >.button.button_nomal.button_arrow-top.button_medium</span>
+  <span class="token punctuation" >|</span> arrow<span class="token punctuation" >-</span>bottom
+</code></pre>
+<div class="aigis-preview">
+
+<div class="button button_nomal button_arrow-plus button_medium">arrow-plus</div></div>
+
+<pre><code class="language-jade"><span class="token tag" >.button.button_nomal.button_arrow-plus.button_medium</span>
+  <span class="token punctuation" >|</span> arrow<span class="token punctuation" >-</span>plus
+</code></pre>
+<div class="aigis-preview">
+
+<div class="button button_nomal button_arrow-close button_medium">arrow-close</div></div>
+
+<pre><code class="language-jade"><span class="token tag" >.button.button_nomal.button_arrow-close.button_medium</span>
+  <span class="token punctuation" >|</span> arrow<span class="token punctuation" >-</span>close
+</code></pre>
+<div class="aigis-preview">
+
+<div class="button button_nomal button_facebook button_medium">投稿する</div></div>
+
+<pre><code class="language-jade"><span class="token tag" >.button.button_nomal.button_facebook.button_medium</span>
+  <span class="token punctuation" >|</span> 投稿する
+</code></pre>
+<div class="aigis-preview">
+
+<div class="button button_nomal button_twitter button_medium">投稿する</div></div>
+
+<pre><code class="language-jade"><span class="token tag" >.button.button_nomal.button_twitter.button_medium</span>
+  <span class="token punctuation" >|</span> 投稿する
+</code></pre>
+<div class="aigis-preview">
+
+<div class="button button_nomal button_hatena button_medium">投稿する</div></div>
+
+<pre><code class="language-jade"><span class="token tag" >.button.button_nomal.button_hatena.button_medium</span>
+  <span class="token punctuation" >|</span> 投稿する
+</code></pre>
+<div class="aigis-preview">
+
+<div class="button button_nomal button_line button_medium">投稿する</div></div>
+
+<pre><code class="language-jade"><span class="token tag" >.button.button_nomal.button_line.button_medium</span>
+  <span class="token punctuation" >|</span> 投稿する
+</code></pre>
+<div class="aigis-preview">
+
+<div class="button button_nomal button_nice button_medium">いいね</div></div>
+
+<pre><code class="language-jade"><span class="token tag" >.button.button_nomal.button_nice.button_medium</span>
+  <span class="token punctuation" >|</span> いいね
+</code></pre>
+<div class="aigis-preview">
+
+<div class="button button_nomal button_swesome button_medium">興味あり</div></div>
+
+<pre><code class="language-jade"><span class="token tag" >.button.button_nomal.button_swesome.button_medium</span>
+  <span class="token punctuation" >|</span> 興味あり
+</code></pre>
+<div class="aigis-preview">
+
+<div class="button button_nomal button_favorite button_medium">お気に入り</div></div>
+
+<pre><code class="language-jade"><span class="token tag" >.button.button_nomal.button_favorite.button_medium</span>
+  <span class="token punctuation" >|</span> お気に入り
 </code></pre>
 
           </div>
-          <footer class="aigis-footer">Last update at 2018/03/28 08:56</footer>
+          <footer class="aigis-footer">TRUNK Styleguide made by HHH 2018/04/02 16:18</footer>
         </div>
       </div>
     </div>

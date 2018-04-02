@@ -50,7 +50,7 @@ tag:
   padding-left: 10px;
   font-size: 22px;
   font-weight: 600;
-  color: #33331a;
+  color: #fff;
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 20px; }
@@ -193,14 +193,14 @@ tag: latest
   left: 0;
   width: 280px;
   box-sizing: border-box;
-  background-color: #f9faf9;
-  color: #33331a;
+  background-color: #222;
+  color: #f9faf9;
   overflow-x: scroll;
   height: 100%; }
 .aigis-sidemenu__heading {
   font-size: 20px;
   margin: 12px 0;
-  color: #33331a;
+  color: #f9faf9;
   font-weight: normal;
   padding-left: 10px;
   line-height: 1em; }
@@ -241,7 +241,7 @@ tag: latest
   display: block;
   position: relative;
   padding: 3px 10px 3px 10px;
-  color: #454545;
+  color: #fff;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;

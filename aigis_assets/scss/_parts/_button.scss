@@ -1,62 +1,245 @@
+/* buttonローカル変数 */
 $border-color: #e4e4e4;
-
+/* end */
+/* buttonのサイズ */
 @mixin button-size($height: 48px, $padding: 16px 28px, $width: 180px) {
   height: $height;
   padding: $padding;
   width: $width;
 }
-
+/* end */
+/* before,afterクラス */
+@mixin before-after-position($top, $right, $bottom, $left) {
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+  right: $right;
+  top: $top;
+}
+/* end */
+/* iconの画像 */
+$icon-items: facebook, twitter, hatena, line, swesome, favorite, nice;
+@each $icon in $icon-items {
+  .button_#{$icon} {
+    position: relative;
+    &::before {
+      @include before-after-position(50%, null, null, 25px);
+      background: url(../images/icon/icon_#{$icon}.svg);
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      content: '';
+      transform: translateY(-40%);
+    }
+  }
+}
+/* end */
 .button {
   $_ancestor: &;
+  box-sizing: border-box;
   border-radius: 50px;
   font-weight: bold;
   letter-spacing: 0;
   text-align: center;
   /* default */
   &_nomal {
-    background-color: $COLOR_WHITE;
+    background: $COLOR_WHITE;
     border: 1px solid $border-color;
     color: $COLOR_NAVY;
   }
-
   &_student {
-    background-color: $COLOR_MAIN;
+    background: $COLOR_MAIN;
     border: 1px solid $border-color;
     color: $COLOR_WHITE;
   }
-
   &_firm {
-    background-color: $COLOR_FIRM;
+    background: $COLOR_FIRM;
     border: 1px solid $border-color;
     color: $COLOR_WHITE;
   }
-
-  &_complate {
+  &_success {
     background: $COLOR_GRAIENT_BLUE;
     border: 1px solid $border-color;
     color: $COLOR_WHITE;
   }
-
   &_grayout {
-    background-color: $COLOR_GRAY;
+    background: $COLOR_GRAY;
+    border: 1px solid $border-color;
+    color: $COLOR_GREYOUT;
+  }
+  &_grayout {
+    background: $COLOR_GRAY;
     border: 1px solid $border-color;
     color: $COLOR_GREYOUT;
   }
   /* end */
-
   /* size */
   &_small {
     @include button-size(42px, 12px 28px, 145px);
     @include font-size(14);
   }
-
   &_medium {
     @include button-size;
     @include font-size(14);
   }
-
   &_large {
-    @include button-size(54px, 20px 28px, null);
+    @include button-size(54px, 15px 28px);
     @include font-size(20);
   }
+  /* end */
+  /* icon */
+  /* arrow-right */
+  &_arrow-right {
+    position: relative;
+    &::after,
+    &::before {
+      content: '';
+      vertical-align: middle;
+      @include before-after-position(null, 0, 0, null);
+    }
+    &::before {
+      @include before-after-position(50%, 20px, null, null);
+      background: $COLOR_NAVY;
+      height: 1px;
+      transform: translateY(50%);
+      width: 13px;
+    }
+    &::after {
+      @include before-after-position(50%, 25px, null, null);
+      border-top: 1px solid $COLOR_NAVY;
+      border-right: 1px solid $COLOR_NAVY;
+      height: 10px;
+      transform: rotate(45deg) translateY(-60%);
+      width: 10px;
+    }
+  }
+  /* end */
+  /* arrow-left */
+  &_arrow-left {
+    position: relative;
+    &::after,
+    &::before {
+      content: '';
+      vertical-align: middle;
+      @include before-after-position(null, 0, 0, null);
+    }
+
+    &::before {
+      @include before-after-position(23px, null, null, 20px);
+      background: $COLOR_NAVY;
+      height: 1px;
+      transform: translateY(50%);
+      width: 13px;
+    }
+    &::after {
+      @include before-after-position(50%, null, null, 25px);
+      border-top: 1px solid $COLOR_NAVY;
+      border-left: 1px solid $COLOR_NAVY;
+      height: 10px;
+      transform: rotate(-45deg) translateY(-60%);
+      width: 10px;
+    }
+  }
+  /* end */
+  /* arrow-bottom */
+  &_arrow-bottom {
+    position: relative;
+    &::after {
+      @include before-after-position(18px, 19px, null, null);
+      border-top: 1px solid $COLOR_NAVY;
+      border-right: 1px solid $COLOR_NAVY;
+      content: '';
+      height: 8px;
+      transform: rotate(135deg);
+      vertical-align: middle;
+      width: 8px;
+    }
+  }
+  /* end */
+  /* arrow-top */
+  &_arrow-top {
+    position: relative;
+    &::after {
+      @include before-after-position(22px, 19px, null, null);
+      border-top: 1px solid $COLOR_NAVY;
+      border-right: 1px solid $COLOR_NAVY;
+      content: '';
+      height: 8px;
+      transform: rotate(-45deg);
+      vertical-align: middle;
+      width: 8px;
+    }
+  }
+  /* end */
+  /* arrow-plus */
+  &_arrow-plus {
+    @include button-plus;
+    &::before {
+      @include before-after-position(23px, null, null, 20px);
+    }
+    &::after {
+      @include before-after-position(23px, null, null, 20px);
+    }
+  }
+  /* end */
+  /* arrow-close */
+  &_arrow-close {
+    @include button-close;
+    &::before,
+    &::after {
+      @include before-after-position(23px, null, null, 20px);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+  /* end */
+  &_facebook {
+    &:before {
+      height: 28px;
+      width: 10px;
+    }
+  }
+  &_twitter {
+    &:before {
+      height: 20px;
+      width: 20px;
+    }
+  }
+  &_hatena {
+    &:before {
+      height: 20px;
+      width: 20px;
+    }
+  }
+  &_line {
+    &:before {
+      height: 10px;
+      width: 26px;
+    }
+  }
+  &_nice {
+    &:before {
+      height: 30px;
+      width: 20px;
+    }
+  }
+  &_swesome {
+    &:before {
+      height: 25px;
+      width: 25px;
+    }
+  }
+  &_favorite {
+    &:before {
+      height: 25px;
+      width: 20px;
+    }
+  }
+  /* end */
 }

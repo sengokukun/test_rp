@@ -6,3 +6,34 @@
 }
 
 /* end */
+
+@mixin button-close {
+  position: relative;
+
+  &::after,
+  &::before {
+    background-color: $COLOR_NAVY;
+    content: '';
+    height: 2px;
+    vertical-align: middle;
+    width: 13px;
+  }
+}
+
+@mixin button-plus {
+  position: relative;
+
+  &::after,
+  &::before {
+    @include before-after-position(null, 0, 0, null);
+    background-color: $COLOR_NAVY;
+    content: '';
+    height: 2px;
+    vertical-align: middle;
+    width: 13px;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+}

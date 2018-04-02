@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="8px" height="18px" viewBox="0 0 8 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook_simple</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="button_icon_facebook_simple" transform="translate(-20.000000, -15.000000)" fill="#09263D" fill-rule="nonzero">
+            <g id="Group">
+                <g id="facebook_simple" transform="translate(20.000000, 15.000000)">
+                    <path d="M1.95166292,6.18748536 L0.24998665,6.18748536 L0.24998665,8.96521235 L1.95166292,8.96521235 L1.95166292,17.1250072 L5.22395042,17.1250072 L5.22395042,8.93050358 L7.50691969,8.93050358 L7.74995995,6.18748536 L5.22395042,6.18748536 C5.22395042,6.18748536 5.22395042,5.16318226 5.22395042,4.62499914 C5.22395042,3.97823279 5.35418719,3.72217673 5.97914223,3.72217673 C6.48265603,3.72217673 7.74992051,3.72217673 7.74992051,3.72217673 L7.74995995,0.874992769 C7.74995995,0.874992769 5.8832987,0.874992769 5.48434507,0.874992769 C3.04944606,0.874992769 1.95166292,1.94698098 1.95166292,4.00000465 C1.95166292,5.78809787 1.95166292,6.18748536 1.95166292,6.18748536 Z" id="facebook-icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

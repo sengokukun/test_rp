@@ -1,0 +1,33 @@
+$icon-items: success, exclamation, errow;
+@each $icon in $icon-items {
+  .notice-bar_#{$icon} {
+    padding-left: 35px;
+    position: relative;
+    &::before {
+      background: url(../images/icon/icon_#{$icon}.svg);
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      content: '';
+      left: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.notice-bar {
+  border-radius: 4px;
+  @include font-size(14)
+  font-weight: bold;
+  height: 46px;
+  letter-spacing: 1px;
+  line-height: 46px;
+  text-align: left;
+  width: 100%;
+  &_success {
+    background: $COLOR_GRAIENT_BLUE;
+    color: $COLOR_WHITE;
+  }
+}

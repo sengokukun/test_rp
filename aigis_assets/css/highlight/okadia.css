@@ -68,7 +68,7 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-	color: #f92672;
+	color: #00a5bf;
 }
 
 .token.boolean,
@@ -120,4 +120,3 @@ pre[class*="language-"] {
 .token.entity {
 	cursor: help;
 }
-

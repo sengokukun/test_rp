@@ -1,0 +1,44 @@
+/* buttonローカル変数 */
+$border-color: #e4e4e4;
+/* end */
+/* iconの画像 */
+$icon-itemss: facebook, twitter, hatena, line, swesome, favorite, nice;
+@each $icon in $icon-itemss {
+  .circle-button_#{$icon} {
+    background: url("../images/icon/icon_#{$icon}.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+/* end */
+.circle-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid $border-color;
+  &_nomal {
+    background: $COLOR_WHITE;
+  }
+  &_arrow-plus {
+    @include button-plus;
+    &::before,
+    &::after {
+      @include before-after-position(23px, null, null, 20px);
+      margin-left: -3px;
+    }
+  }
+  &_arrow-close {
+    @include button-close;
+    &::before,
+    &::after {
+      @include before-after-position(50%, null, null, 50%);
+      margin-left: -6.5px;
+    }
+    &::before {
+      transform: rotate(-45deg);
+    }
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+}

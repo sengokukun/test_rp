@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8,8 L10,8 L10,13 L8,13 L8,8 Z M8,5 L10,5 L10,7 L8,7 L8,5 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="notification_error" transform="translate(-15.000000, -15.000000)">
+            <g id="Group-Copy-2">
+                <g id="Group-2">
+                    <g id="Group-6" transform="translate(15.000000, 15.000000)">
+                        <g id="Combined-Shape">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <path stroke="#FFFFFF" stroke-width="1" d="M8.5,8.5 L8.5,12.5 L9.5,12.5 L9.5,8.5 L8.5,8.5 Z M8.5,5.5 L8.5,6.5 L9.5,6.5 L9.5,5.5 L8.5,5.5 Z"></path>
+                        </g>
+                        <path d="M11.1187814,1.9499354 C10.89854,1.56690689 10.5807219,1.24908885 10.1976934,1.02884746 C9.0007456,0.340602456 7.47249486,0.752987577 6.78424986,1.9499354 L1.14701495,11.7538222 C0.929010678,12.1329601 0.814280711,12.5626542 0.814280711,13 C0.814280711,14.3807119 1.93356884,15.5 3.31428071,15.5 L14.5887505,15.5 C15.0260964,15.5 15.4557905,15.38527 15.8349283,15.1672658 C17.0318762,14.4790208 17.4442613,12.95077 16.7560163,11.7538222 L11.1187814,1.9499354 Z" id="Triangle" stroke="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
